@@ -5,11 +5,10 @@
     box-sizing: border-box;
 }
 body {
-    font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-family: system-ui;
     background: #f4f7fc;
     color: #1a2c3e;
     line-height: 1.4;
-    scroll-behavior: smooth;
 }
 .site-header {
     background: #0b2b3b;
@@ -37,7 +36,6 @@ body {
     -webkit-background-clip: text;
     color: transparent;
 }
-
 .logo p {
     font-size: 0.75rem;
     color: #bbd4e3;
@@ -155,7 +153,10 @@ ul {
     margin-bottom: 1rem;
     color: #1a4e63;
 }
-
+.card img {
+    max-width: 100%;
+    height: auto;
+}
 .card p, .card li {
     color: #2c4b5e;
     line-height: 1.5;
