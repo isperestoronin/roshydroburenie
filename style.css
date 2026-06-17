@@ -8,7 +8,6 @@ body {
     font-family: system-ui;
     background: #f4f7fc;
     color: #1a2c3e;
-    line-height: 1.4;
 }
 .site-header {
     background: #0b2b3b;
@@ -17,7 +16,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .header-container {
     max-width: 1280px;
@@ -80,8 +78,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-/* Затемняющий слой */
 .hero::before {
     content: '';
     position: absolute;
@@ -89,17 +85,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* 0.5 = 50% затемнения */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
-
-/* Чтобы контент был поверх затемнения */
 .hero * {
     position: relative;
     z-index: 2;
 }
-
-/* Затемнение через градиент (проще и без псевдоэлементов) */
 .hero1 {
     color: white;
     background-image: url("history.png");
@@ -109,12 +101,10 @@ body {
     color: white;
     background-image: url("dobycha.jpg");
 }
-
 .hero3 {
     color: white;
     background-image: url("inzhener.png");
 }
-
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -165,17 +155,14 @@ ul {
     background: #f0f5f9;
     padding: 1rem;
     border-radius: 16px;
-    font-family: monospace;
     font-size: 0.85rem;
     color: #4e6b7a;
     margin-top: 0.8rem;
 }
-
 .service-list {
     list-style: none;
     padding: 0;
 }
-
 .service-list li {
     padding: 0.6rem 0;
     border-bottom: 1px dashed #cbdbe2;
@@ -183,13 +170,10 @@ ul {
     gap: 0.5rem;
     align-items: center;
 }
-
 .service-list li::before {
     content: "⚙️";
     font-size: 1.1rem;
 }
-
-/* Стили для таблицы услуг */
 .services-table {
     width: 100%;
     border-collapse: collapse;
@@ -199,7 +183,6 @@ ul {
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
     border: 1px solid #e2edf2;
 }
-
 .services-table th {
     background: #1a5d72;
     color: white;
@@ -208,39 +191,31 @@ ul {
     font-size: 1.1rem;
     font-weight: 600;
 }
-
 .services-table td {
     padding: 16px 20px;
     vertical-align: top;
     border-bottom: 1px solid #e0edf2;
 }
-
 .services-table tr:last-child td {
     border-bottom: none;
 }
-
 .services-table td:first-child {
     background: #f9fcfd;
     width: 28%;
 }
-
 .services-table td:nth-child(2) {
     width: 47%;
 }
-
 .services-table td:nth-child(3) {
     width: 25%;
 }
-
 .services-table ul {
     margin: 0;
     padding-left: 1.2rem;
 }
-
 .services-table li {
     margin-bottom: 6px;
 }
-
 .table-detail {
     background: #f0f5f9;
     padding: 8px 12px;
@@ -248,7 +223,6 @@ ul {
     font-size: 0.85rem;
     line-height: 1.5;
 }
-
 .ris{
     font-size:10px;
 }
@@ -257,7 +231,6 @@ ul {
     margin: 0 auto;
     padding: 3rem 2rem;
 }
-
 .contacts-title {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -266,7 +239,6 @@ ul {
     padding-left: 1.2rem;
     color: #0a2f3f;
 }
-
 .contacts-simple {
     background: white;
     border-radius: 32px;
@@ -278,7 +250,6 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
-
 .contact-block {
     flex: 1;
     min-width: 240px;
@@ -286,7 +257,6 @@ ul {
     flex-direction: column;
     gap: 1.2rem;
 }
-
 .contact-item {
     display: flex;
     align-items: center;
@@ -297,18 +267,12 @@ ul {
     border-radius: 60px;
     border: 1px solid #e0edf2;
 }
-
-.contact-item .emoji {
-    font-size: 1.6rem;
-}
-
 .contact-item a {
     color: #1a5d72;
     text-decoration: none;
     font-weight: 500;
     transition: 0.2s;
 }
-
 .contact-item a:hover {
     color: #ff8c1a;
     text-decoration: underline;
@@ -317,14 +281,12 @@ ul {
 .contact-item span {
     color: #2c4b5e;
 }
-
 .contact-note {
     font-size: 0.85rem;
     color: #6c8b9b;
     margin-top: 0.5rem;
     padding-left: 0.5rem;
 }
-
 .contact-placeholder {
     background: #f0f5f9;
     padding: 1rem;
@@ -335,8 +297,6 @@ ul {
     margin-top: 1.5rem;
     text-align: center;
 }
-
-
 @media (max-width: 760px) {
     .contacts-section {
         padding: 2rem 1.2rem;
